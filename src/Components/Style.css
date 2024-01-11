@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    text-decoration: none; 
+    
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: whitesmoke;
+}
+
+.Navcontainer{
+    height: 60px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ /* justify-content: center; */
+ padding: 5px;
+ background-color: white;
+
+}
+.Navitems a{
+    text-decoration: none;
+    padding: 6px;
+    color:#000;
+    margin: 5px;
+}
+.Logo {
+    height: 60px;
+}
+.cartNO{
+    background-color: #7465db;
+    padding: 5px;
+    border-radius: 100%;
+    font-size: 14px;
+    height: 25px;
+    position:absolute;
+    margin-right: 10px;
+    margin-top: -10px;
+}
+.hamburger{
+  display: none;
+}
+/* Your existing styles */
+
+@media only screen and (max-width: 768px) {
+    .Navitems {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px; /* Adjust based on your navbar height */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1;
+        border: 1px solid #ddd; /* Add a border for better visibility */
+    }
+
+    .Navcontainer.active .Navitems {
+        display: flex;
+    }
+    .hamburger{
+        display: block;
+        padding: 6px;
+        margin: 5px;
+    }
+}
+
+/* Product */
+.PContainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Pcart{
+    margin: 10px;
+    padding: 10px;
+    width:230px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.description{
+    display: none;
+}
+.Pcart:hover{
+  box-shadow: 0.5px 0.5px 3px 3px rgb(209, 204, 204);
+}
+.Pimg{
+    align-items: center;
+    height: 160px;
+    width: 180px;
+    margin:10px;
+  
+}
+.ATbtn{
+    background-color: #7465db;
+    color: white;
+    width: 90%;
+    padding:10px;
+    font-family:Arial, Helvetica, sans-serif;
+    border: none;
+    box-shadow: 0.5px 0.5px 0.5px;
+    text-decoration: none;
+    font-size: 14px;
+    
+}
+.title{
+    margin-top: 30px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.Pricetag{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+.star{
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+.Star2{
+   
+    width: 30px;
+    height: auto;
+}
+
+/* herosection */
+.heroContainer{
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 480px;
+    width: auto;
+    background-color: #bcc5f7;
+    box-shadow: 0.5px 0.5px 3px 3px rgb(209, 204, 204);
+}
+.heroLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    width: 50%;
+}
+.heroRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 50%;
+}
+.heroRight img{
+    height: 490px;
+    width: auto;
+    margin-top: -30px;
+}
+.heroHeading{
+    text-align: center;
+    color:#000;
+    font-size: 50px;
+    font-weight: bold;
+   
+}
+.heroBTN{
+    padding: 10px;
+    width: 240px;
+    font-size: 16px;
+    margin: 20px;
+    background-color: #7465db;
+    color: white;
+    border: none;
+    font-weight: 700;
+    box-shadow: 2px 2px 1px 2px #111112;
+}
+.heroBTN:hover{
+    background-color:whitesmoke;
+    color: #7465db;
+    transition: 0.5s;
+    box-shadow: 0.5px 0.6px 1px 1px #7465db;
+}
+
+.heroBTN2{
+    padding: 10px;
+    width: 240px;
+    margin: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #7465db;
+    border: 1px solid #7465db;
+    border: 1px #7465db;
+    box-shadow: 0.5px 0.6px 1px 1px;
+}
+.heroBTN2:hover{
+    background-color: #7465db;
+    color: black;
+    transition: 0.5s;
+}
+
+.heroLeft p{
+    margin: 10px;
+    color: white;
+}
+/* freeshippingContainer */
+.freeshippingContainer{
+    display: flex ;
+    justify-content: space-evenly;
+    margin:20px 10px;
+
+}
+.sCart{
+    height: 100px;
+    width: 33.3%;
+    /* border: 0.5px solid blac; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    flex-direction: row;
+    padding: 35px;
+    margin: 3px;
+    box-shadow: 0.5px 0.5px 3px 3px rgb(209, 204, 204);
+}
+.sCart h3{
+    font-weight: 600;
+    margin: 3px 0px;
+    font-size: 18px;
+}
+
+/* footer Container */
+.fContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 200px;
+    color: white;
+    background-color: #000;
+    margin: 0px;
+}
+.fContainer h5{
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    font-size: 14px;
+}
+.fContainer h3{
+    text-align: center;
+    font-weight: 500;
+    margin: 10px;
+    font-size: 18px;
+}
+.copywrite{
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    
+}
+svg{
+    
+    margin-right: 5px;
+}
+hr{
+    margin: 0px;
+}
+
+@media (max-width: 768px) {
+    .heroContainer {
+        height: auto; /* Adjust the height for smaller screens */
+        display: flex;
+        flex-wrap: wrap-reverse;
+        /* height: 600px; */
+    }
+
+    .heroLeft,
+    .heroRight {
+        width: 100%; /* Make the hero sections full width on smaller screens */
+    }
+    .heroLeft{
+        margin-top: -100px;
+    }
+    .hide{
+        display: none;
+    }
+    .heroRight img{
+        height: 390px;
+        width: auto;
+         margin-top: -60px;
+         /* margin-bottom: -60px; */
+    }
+    .Navbar a{
+        text-decoration: none;
+        margin-right: 10px;
+        font-size: 16px;
+        
+    }
+    .heroHeading{
+        color: black;
+        text-shadow: #0000;
+        font-size: 50px;
+        font-weight: bold;
+        margin-left: -10px;
+    }
+    .freeshippingContainer{
+        margin-top: 30px;
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        flex-direction: column;
+    
+    }
+    .sCart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 92%;
+        /* margin: 5px; */
+    }
+    .Logo{
+        height: 60px;
+    }
+    /* product */
+    .Pcart{
+        margin:8px;
+        padding:8px;
+        width:190px;
+        height: 370px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Pimg{
+        align-items: center;
+        height: 140px;
+        width: 160px;
+        margin:10px;
+      
+    }
+    /* footer */
+    .fContainer{
+        flex-direction: column-reverse;
+
+    }
+}

@@ -1,0 +1,154 @@
+.SPcontainer{
+    min-height: 450px;
+    width: auto;
+    background-color: white;
+}
+.SPproduct{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.SPBox{
+    width: 40%;
+}
+.SPimage{
+    height: 300px;
+    width: 290px;
+    /* margin-top: 30px; */
+    margin-right: 150px;
+    transition: transform 0.5s;
+}
+.SPimage:hover{
+    transform: scale(1.2);
+}
+.SPBox h1{
+    padding: 5px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.SPBox h5{
+    padding: 5px;
+    font-size: 14px;
+}
+.SPBox h2{
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.SPBox button{
+    font-size: 14px;
+    padding: 10px;
+    background-color: #7465db;
+    color: white;
+    border: none;
+    width: 50%;
+    margin-top: 10px;
+}
+.category{
+    color: #7465db;
+    margin-top: 15px;
+}
+.backBTN{
+        margin-top: 20px;
+        border: none;
+        background-color:white;
+        padding-left: 50px;
+        font-size: 16px;
+}
+
+/* constact form */
+.ContactBox{
+   min-height:  600px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    /* background-color: white; */
+}
+.ContactBox h2{
+   text-align: center;
+}
+.ContactContainer{
+   
+    /* height: 20px; */
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 1px 2px 1px 3px rgb(229, 217, 217);
+}
+.ContactContainer form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ContactContainer input{
+    padding: 5px;
+    background-color: whitesmoke;
+    /* box-shadow: 0.2px 0.5px 1px 1px; */
+    border: none;
+}
+.ContactContainer textarea{
+    padding: 5px;
+    background-color: whitesmoke;
+    /* box-shadow: 0.2px 0.5px 1px 1px; */
+    border: none;
+}
+.ContactContainer button{
+    padding: 5px;
+    border: none;
+    background-color: #7465db;
+    box-shadow: 0.2px 0.5px 1px 1px;
+}
+
+.ContactBox{
+    height: 400px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .SPBox {
+        width: 60%; /* Adjust as needed for smaller screens */
+    }
+
+    .SPimage {
+        margin-right: 0;
+    }
+    .SPproduct{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+    }
+    .SPBox button{
+        padding: 10px;
+        background-color: #7465db;
+        color: white;
+        border: none;
+        width: 95%;
+        margin-top: 10px;
+    }
+    .SPBox h1{
+        padding: 5px;
+        font-size: 24px;
+    }
+    .cover img{
+        height:220px ;
+        width: auto;
+       align-items: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .SPBox {
+        width: 80%; /* Adjust as needed for even smaller screens */
+    }
+}
